@@ -24,18 +24,19 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiamNzYW5mb3JkIiwiYSI6ImNrZG1kdnU5NzE3bG4yenBkb
 // Yosemite Valley - 37.7312813,-119.6055247
 const map = window.map = new mapboxgl.Map({
     container: 'map',
-    center: [-119.6055247, 37.7312813],
-    zoom: 13,
+    center: [-119.5413507, 37.7475183],
+    zoom: 13.2,
     pitch: 61,
-    bearing: -160,
+    bearing: 60,
     style: 'mapbox://styles/mapbox/satellite-v9'
 });
 
 async function animate() {
     // do all the animations you need to record here
     map.easeTo({
-        bearing: map.getBearing() + 20,
-        duration: 3000,
+        bearing: map.getBearing() + 40,
+        center: [-119.5341459, 37.7498133],
+        duration: 4000,
         easing: t => t
     });
     // wait for animation to finish
