@@ -50,7 +50,7 @@ map.on('load', async () => {
     await map.once('idle');
 
     // uncomment to fine-tune animation without recording:
-    animate(); return;
+    // animate(); return;
 
     // don't forget to enable WebAssembly SIMD in chrome://flags for faster encoding
     const supportsSIMD = await simd();
