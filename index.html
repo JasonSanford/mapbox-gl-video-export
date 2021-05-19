@@ -34,7 +34,7 @@ const map = window.map = new mapboxgl.Map({
 async function animate() {
     // do all the animations you need to record here
     map.easeTo({
-        bearing: map.getBearing() - 20,
+        bearing: map.getBearing() + 20,
         duration: 3000,
         easing: t => t
     });
