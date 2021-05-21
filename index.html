@@ -27,16 +27,17 @@ const map = window.map = new mapboxgl.Map({
     center: [-119.5413507, 37.7475183],
     zoom: 13.2,
     pitch: 61,
-    bearing: 60,
+    bearing: -20,
     style: 'mapbox://styles/mapbox/satellite-v9'
 });
 
 async function animate() {
     // do all the animations you need to record here
     map.easeTo({
-        bearing: map.getBearing() + 40,
-        center: [-119.5341459, 37.7498133],
-        duration: 4000,
+        bearing: map.getBearing() + 180,
+        // center: [-119.5341459, 37.7498133],
+        center: [-119.5339927, 37.74725],
+        duration: 8000,
         easing: t => t
     });
     // wait for animation to finish
