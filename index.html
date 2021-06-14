@@ -20,8 +20,1181 @@
 <script type="module">
 import loadEncoder from 'https://unpkg.com/mp4-h264@1.0.7/build/mp4-encoder.js';
 import {simd} from 'https://unpkg.com/wasm-feature-detect?module';
-const encodedPolyline = 'qbieFxwwxUPa@@O@MBK@O@M@K?M?K?IAKAOAKAKAKAI?M?O?M?K?OBIDQBKBKBKDMBMDM@O@MBK@K@OBMBGXk@FMFKDKDKDGDKFKJUFIDIDIFKFIDIFKDIDIDIDIFIDKDGDIDKDIFKDKHKDIDIDIDIDIDIFIFIFGFIFKDIFKDIFIFIBETw@BIFGBKDIBKBMBMBK@KDM@MBMBK@O@Q@M@M@M?K?O?M?OCMAOCMGMAMCQAKCOCMAM?ICu@?M?KCKCIEIGI?KFGHCJBL@JBJDHBJDHDNHHDHDNHPHVJH@L@LBJDH@HBJ@H@H?F?HA??j@EHEFEFEFEFEFIHEJEJCFCJCJCHAHAHAHAFAH?HAHAH?LALAJAJ?L?H?H?H@J@J?H?H?H?J@LBJDLDRJPFLDDBr@HJBHBLBLDLDH@JBLBJBH@J?J?H@H?H?L@H?HBHBH@JDJ@H@J@J?J?HCJIHIDIFGBIDMDO?K?M?O@M?M?M@KDKBKDIFKBKDKDO@KDO@O@O?ODI@KBQBO?O?O?M?Q@M@OBM?EXa@?M?Q?M?OEOCOEMAKCKCKEIGQEMEKCICKEQAKAK?O?S?K?M@KBMBMBMBMBKDM@M@M@K?M@S@M?[@S?O?K?IQy@?O?MAKAM?K?KAM?K?M@KBKDIFGHGJEJEHCHGFEFGDKDI@K?MIKEIKKEKEIGKEMCOAM?M?M?O@K@MBK@GDu@?MAMEKEMCKCQEMAMCMCOAMEMAKCK?MAK?O?K?CJ?@m@E_A?{@Is@Be@JuACy@_@uAUe@UYWUEk@MGBKNBIOMQFOGMHCI[DQ@KLS?[TGIUASJWFy@Ba@Gg@Aq@DOA{@_@YU???UTMVSVGNIBGC?WJa@Mk@`@mC\w@TU\QTANFH\F@Vc@HY@GHo@?_@F[AABC?AICGGEGAM?M@M@KEKGIGE??W[CKCK?K?O?M?M@K?M?KAKCKEIEKEGKIIEGGGGGIGIGKGIEIGIKEKGGGGKAM??[QGEGGIGEGGEEIGGEGCICM?O?KFIJCHCHAJCH?LAJEHAJAJCHCJCLCJCFCHCHEJEDI@?NIHEHGFEBK@M?MEKCKGIEGGEGIAK?K@MCKCIEIAO?M?KBKHCJAHAHEBICIEIGGEIEKAMDMHCFEHCJCH?H???XGHEFIBKBKGIGEMKEGCM?K?O?KCKGGMEICIC??WEM?ICIECI?MFKFAHCHCDI?M?K@KFGFI?KCKBKHEHAB?NGFEEIGCICHEFCHGBIIEKCKCBKHEFEEIIEEGFCEKGIBKJCHEEKKAGEFGHCGGKABKHGDIGIIEIEEEDEFI@?DQ?MGIEGAMFKFGDGHKDK@I?M?MCMAM?M?K@K@O@K??F]@M@K?M@M?MCMCIK?GHEFGDKE@MFIDGFKDGFKDI@MICG?IDIFIFGDI?IG?K@ODKFGFGDEHEDG?KIEGAICICGICGGEIEGGGIGKCCUMI?KCICGGEIGGIGIEGGGGGGCIAKDEH?H?J?HACKIEICIGGCICGEICKAG@I?E?W?K?GCGCGGGEIEKMGGEGIEEGCMAKCKCIIECCYQGGGGEKGIEIGGEGIEKGGCGGEIEIEKCKGGEEIEEGIIGGCEe@g@EKGIGGEICICKCMCOEQEMGIIKIKGKGKEGISI[AM?K@KBKBMBI@KBK@M?K?K?G?k@?O?M?K?QEKCKCKEMEKEKI[CKEWEQCMEQAKAMEM?KCKCKEKEIEKEGEIEIGKCICKCIEMEOEOCIEIEKEIGIEIGEKOKMEGCEMk@COEKEKCMEIGGGGGGEIIKCMEKCKEIEIIGIKGGMOEIGMEKEKGIGIIGIKEIGIEIIOEIGGEIGGGG??YQKCGEIAICGCGCIGGEIKGMGKCMEMEIGUEIEOAQAQ?SAO?O@O?M?MAMAKCMCMCKCOCICIEMAICKCIGOGOCIEOEMAICMCMAKCIGu@AMCIEIEIEKGMCICMEICMAKCICKAMEICOCIESAMAIAKCOAKCMGMIIEGIIGGEGA?i@SIGEIEGGKIIEGEIGIEGGGGEEJ@J?L?JBJ@LBH?L@NI?EIEIEICGGG?AQAIDEJCL?J?J?L?LGFIAIEGGEGIIKCM?CJEJ?LCJEFI?IAKAICI?C?WIGNEHICGGGEUDI@IHI@I@K?IAGEICKAIAICEGGICIGKIGIIIEEE_@_@M?I?K@IBIDGDIBGDGHGFIDMFGDGHGHEFGHIHIHGHIFIBI@I???a@EI?M@K?I?M?K@IDEFEHAJ?LALCJI?IEKCICEIEKIIIAIEIGEGAK?M?KGKEIKEKGKGICGGEEEOEKCKCKCKAMAO?K?K?K?M@OBM@K?M@OBM??@u@DIDIDIFKBMBK@O@M?K?KCKEMEOCMCKCKGGGAIFCJEFELCLEHGIAKAO?K?M?KCKEIIAIAKEGIAKAK?M?K?KCKEOEKEMEKEIGGI?K?KDEFELGLCLENEJGJGHGFEHEHCJAJ?J?LAJGHEJ?JAL?LCJGHI?C?W^AJGE@MICI@CMAK?K?KAKAM?K@KBM@KBMBO?K@K?KICGFEFKJMHGFIDEFIFI@I@I@IFEHEHCJAJCJGFEHAJ?J?LCBQh@G@I@ICAKEKCK?KAO?K?K?K?MAOAKAKCMCKGIIBEHGJEJCJELEJEGEII@KFIBIFEJGJCDc@b@OBIBIBI@GDI@K?IAIEICIAI?I@GDKDEFGDGFK?K?G@GFEJEJI@I?IAG?GJEHEJC@UPCK?KEIIAI?I?K@GJEHCL?LEHGFKHIDEHGFK@I?K?G@I?ICIKIEK?IFIDKDIDA@u@b@K?UFI@I?CJKJKJCJ?JBL@JBL?J?P?L?N?PALEHIFI?I?IEEGGIGGIIGKGIGKKIIIKEGEM?K?EHEPEJ?NCPCLCLCPAJALCNELELAJEPEJA@UfAGBKBK?MAMEKGIEKCMCQEOCKCG?KAIAI?MAI?I?K?I?I?G?I?I?I@K@GDKD[JQPGHGFCD_@p@ANAPCNAJALALCPANCJAL?LCRALALCNCJCJEHEJGJIJEHCJEJEHEHIHEFGHEHCHEHEJAJAL?JBL?JALCJCJAJ?N?L?J?J?L?J?L?N@L@N@J@L@J@J@N@J?J??V|A?J?NBN?L@J@N?J@J@J@J@JBJBJDLDJDFFHHFJ@L?J?FIBKBKFEHCH?JBFDFHDHFFBM@OBK@K?K@O@KHAFCJCJ?HBHJJLJJFFFD@B`@x@?R?NBJDNBJDJFJDLFLDLDFBL?L?LAJ?J?N@JHLFHDJ?J?LCNCLAL?J@NFLBJFHFHDJDHDHFLFHDHDH@LBL?N@L@J@F?z@?L?P?PAJAJAJ?J?J?J?N@JBL@J@J@JDXHJHFFDH@J@FFFFBJBJDJDFHBHFHDFHBNBLBJ@JBBTRF@H@H?H?H?H?H?H?F?CHEHH@H?L?J@GFGBGH?JHBDHCJBJFBFF?J?JBJH@@HJRFP?J@L@H@JBJDJBHFHDHDHFFFHFFBHDHDJBLFJHJFDFDHJFDDFHDHFFDFFJBFDFDHHDJBJBLDJDJDHDJDJDHBJ??Jb@BJBJBLBHBJBLFJDHDLBH??Jd@?L?JBNBLDNBLDJDJDHBJDHDJBJDJDNDHDJ@LBJ@JBDNb@?JBJ@H?N?JEJGFI@M?GAKAK?IAKAG?p@D@PBJ?JAHEJEHEHCDL[HCHEJCFEJ?J?F?L@HBL@H@H@J@JDF@HBHBF@JBDB`@TH?HBHDHDHFHHFDFFFFDFFFBHFH?J?J?JCJAF@GBK?K?K?KGICIGGEGGGGGGEIIIGIEIEICI?a@UECKCGAICICGAKEKAIAIAMAICMAG?K?K?GDKBIDIBMZBEDIDIDK@I?KCKAQq@EF?J@H@J?J@F@L?HAFGDK?K?OAICK?KOc@CEAKCKAMEKEIEOEKCKEKEICKEIEKEKCMEOCMCO?K?MKe@??CIEMEIGKCMCKCICMCKCKKc@??CKEIEKEKEIEKEKCMCKEKIIGEGEKCGGGEIGIEEGGEIKGEGEIKGKCMEKEICIGGGIGGEIEIGICIEKCKAKAIAM?KGQKSAIIACK?K?KGGGCCKBKEIIC?KFIFCFGKAM?I?IADIBIG?I?I?I?I?I?I?IAGAUSCCAKCKCMCOGIIEIGICEGEKCKCKGGGGKAIAGEIGIKEYAKAKAKCMAK?O?K?K?K@K@K@K?Q?Q?M?{@AGAKAM?OCMAMEIEIGIGMEIEIEKGIGICKGMAO?K@MBMBO?M?KEKGIIMAK?O?K@K?M?MCMEGEMGMEMGKEKCKEOCK?O?Sa@y@ACGEGGKKKMIKICK?KBGBI@AJAN?JAJCJANCLGGEIGIGEKCI?IBGDCJCJGHK?M?KAIGGIEGEKEMCKCKAKAKAKAK?KAOAK?MCO?O?KW}A???KAKAOAKAKAMAKAOAM?O?M?K?M?K?K?M?O@KBKBK@M?KCM?K@M@KDKDIBIDIFIDGHIDIDIDKBKDIHKFKDKDIBKBKBO@M@MBS?M@MBK@OBQ@M@M@KBO@Q@O^q@BEFGFIPQZKJEFEJAHAH?H?F?H?H?J?H?H?L@H?H@J@F?JBNBPDLBJBHDJFLDL@J?JCFCTgA@ADKDQ@KDMDMBO@M@KBQBMBMBQ?ODKDQDIJ?L?FDJDHHJHFJFHFJHHFFFHDFHDH?H?HGDI@M?Q?O?M?Q?KCMAKCM?KBKJKJKBKH?HATGJ?t@c@@AHEJEHEHGJ?HDHJHBH?FAJ?H?JAFGDIHEJIFGDI?MBMDIFKJAH?H?H@DH?JBJTQBADKDIFKF?H@H?HADKDKFGFAJ?J?FGFEDGJEFEHAH?H@HBHDH@J?HAFEHAHCHCNCb@c@BEFKDKHGHCJGHADHDFDKDMBKDKFKDIHCFHBJBL@J@J@N?L?J?J?J@N?JBJDJ@JHBHAFAPi@BC?M?K@KDIFGBK@KBKDIDIHGHAHAHAHGDGHEFGLIJKDGFGHB?JAJ?JCNCLAJCLAJ?J@L@J?J?J@JBLHAHBALFD@KV_@B?H?FIBK?M@M?KDKFI@K?M?K@KBKDIDIFGFIFKDKDOBMFMDMDGJEJ?H?FFDHDJDLDJDNBJ?J?J?L@J@JFHJDH@H@DHBJ?J?L?J@N@JFHDIBMDMDGBKHGF@FFBJBJBLDNDLBJ?J?JALANCJCLGJEHEHEHAt@??CLAN?LAJCLAN?L?J?J?J@N@LBJBJBJDJDNDDFFHBJFJFJDDHFJ?J?L@JDFHFHDH@HHDJDHHBJBHDH?BK@M?M@KDIDGHEJAL?H?J?LAH?`@D??H?HAHCHGFIHIHIFIDGFIFIFELGHEFGFIFEHCFEHEHCJAH?L?^^DDHDHHHFFJBHFHDFHBH@J@HBFDH@J?HAHAHIHATEFDFFHBDIFOVHB?H?HBJ@H@H?DGBK?MDKBKL?JBHHDFFFHDH@FG?M?M?K?KBMDKHEP@?@FFBFDHDHDHH?AO?MCIAMCK?K?MAKDKFDFFDFFHDHDFHHFJDFDHHFh@R@?DFFFHHDFHHFLBL@JBN@J@H@LDRBHBNDH@LBJBH@JBLDHBLBHFLDJDHDHBH@LFt@BH@JBLBL@HDLDNBHFNFNBHBJ@HDLBHBHBNBJBLBL@J@L?L?LAN?N@N?R@P@PDNDHFTDHDLBLFJFLHJFDHFFBFBHBH@FDJBXP??FFFFDHFFDHHNDHFHDHHJHFFHFHDJDJFLDHLNFFHJHFDHDHBJDJBLHJDHFFFFFFDHBLDJDJBNLj@BDDFJLJNFDDHFHDHDJDHBHDNDNDLBHBJBHFJDHDHDFDJDHDJBJBJ?JDL@L@JDPBLDPDVBJHZDJDJDLBJBJDJ?P?J?L?N?j@?F?J?JALCJAJCHCLCJAJ?J@LHZHRDFFJFJHJHJFHDLDPBNBLBJBHDHFFFHDJd@f@BDFFHHDFHDDDFFBJDJDHDHFFFBJFHDDFFFDHFHDJFFFFXPBBHDBHBJ@JBLDFHDDFFFJLHDFDFFFBFBJ?V?D?H?FAJ@HBFDHBFBHFHBHDBJI@K?I?I?ED@JBHFFFFFFHDHFFFDHFFHBJBH?TLBBFJFHFF@?A@b@Zf@NDLc@JCb@MRT?PMP?V?JBPFHDFTFb@HTL\Fz@Nt@Xl@d@hBx@pARb@HND@h@HJJdAbAPF\HZHNPHLPf@Zb@n@b@X^JHd@Ln@`@BTBB??T^J\F|@BRR`ARh@^pBXt@F^EnAMfAAj@I\CZAj@Bd@Kt@Ud@I\QzAJbAHZDZDh@Cd@KFOs@S[Ou@Qg@Kk@GOCMCAA?C@AFGXE\B^VjAJb@Ff@?LMzAWnAO^EN?\GT]p@Sx@[j@Wn@UbAWh@GVQXGd@IDDq@?o@Fi@@m@AYQb@k@jAIr@IXOT[lBM?WWEGCZEd@Kd@EBGBIQQYCKE]CGG|@A`@@XBHBJJNNHBDBh@DRJXPVHHJ?DC?ADCFEFGFEDIFEHEJEJAHAJ?J?JBJ?HDHBJFJFFFAJIBK?K?I?I?G?I?I?GBFDF@J@H?J@JBHDJBJ@BJI@G?K?G?K@HDFDHDFDLDFHI?IAIAIAI?DFFDFDJDHDFDIBI?IAKCKAKCGAIBFFFFJDFDFHDFFFLH@HIDI@EFDFFDJBDT@DBJANEFEH?J@JFHDHFDDFJBBJIFIDI@DFFFFFHDFDHDDFFHBL@L@JBLDHDNDHDFLLHJHJDJJJFHFFLLDFBN?JAJGFI@GCIIGGIKGGIKGEIEIEGEIGGGIGKMEGEIg@c@??EIKKEGKIIGGGKMIGIGGIGEGEIEIAICGAK?K@DHDHFHDJDHFHFHFHFHDH@J?LCJEFICIGIKGKGIGGIEKEKCGEGEIEGIIGGKGIEICIEIICI@?L@JBHDHDJBJDHBNBLBNDPBHDLBHBLBL@J@J@JGDIEGGGGEIEKGGGIGGIKGGGKg@i@?AICGEMEGGGIGE?J@LBJ@JDJBLDJBHDHFJFJFJFHDHBJBJ?J@LCHGEGGGMEIIMMSIOGGIEGEIEGEMIGGIIIIIIGGGGIKGKEGIAEFAL?J?N@J?LBJ@JDL@LBNBL@LDLBPBJDLDJ@L?LEt@AFCJALAJ?N?L?L@LBNDLFJDHDJJJDHHJ?LAJEHEJGFGDIFIBKDKDIFGFEHCJAJ?L?J@L?J?J@L@J?L?NPx@?H?J?NAR?ZALAR?LAJALALELCJCLCLCLCLAJ?L?J?R?N@J@JDPBJBHDJDLFPDHBJBJ@JDLBNDN?N?L?P?LY`@?DCLANAL?P?L?N?NCNCPAJEH?NANANENAJENEJCJGJEHCJEJAJ?L?LAL?N?L?JENELCHGFEHIHKHIBK?K?KAIAKAKEIAICICI?MAI?I?IAK?K?IAKCMCKCIAMEMEMCICKCs@IECMEQGSKMEKEMCKAI?I?I?K?KAIAI?I?M?K?K@M@M@I?I@I@I?G@I@I@I@I@KBKBGBKBKDIDGHGDGDGDGDIDk@D??I@G?I?IAKAICIAKEMCMAIAWKQIOIIEIEOIIEKEICKEKCMAKCIBGF?JFHDHBHBJ?J?LBt@?H@LBLBN@JBP@LFLBL@NBL?N?L?N?JALALALAPANCJCLALELAJCJCLCLCJEHCJGFCHUv@CDGHGHEHGJEHGJGHGFGHGHEHEHEHEHEHEHIJEJGJEHEJEHEFEJGHEHEHEHEHGJEHGHGJEHEHGHKTGJEJEFEJEJGJGLYj@CFCLANAJCJALANELCLELCJCJCJEPCH?N?J?L?N?L@H@J@J@J@N@J?H?J?LAJALANCJALANQ`@';
-const wholeGeometry = polyline.toGeoJSON(encodedPolyline);
+const wholeGeometry = [
+  {
+    "lon": -119.52011,
+    "lat": 37.732,
+    "ele": 1880
+  },
+  {
+    "lon": -119.52031,
+    "lat": 37.73219,
+    "ele": 1882
+  },
+  {
+    "lon": -119.52027,
+    "lat": 37.73222,
+    "ele": 1882
+  },
+  {
+    "lon": -119.51994,
+    "lat": 37.73249,
+    "ele": 1881
+  },
+  {
+    "lon": -119.51957,
+    "lat": 37.73271,
+    "ele": 1877
+  },
+  {
+    "lon": -119.51942,
+    "lat": 37.73323,
+    "ele": 1876
+  },
+  {
+    "lon": -119.51903,
+    "lat": 37.73342,
+    "ele": 1876
+  },
+  {
+    "lon": -119.51818,
+    "lat": 37.73354,
+    "ele": 1875
+  },
+  {
+    "lon": -119.5175,
+    "lat": 37.73378,
+    "ele": 1878
+  },
+  {
+    "lon": -119.51732,
+    "lat": 37.73382,
+    "ele": 1878
+  },
+  {
+    "lon": -119.51702,
+    "lat": 37.73392,
+    "ele": 1877
+  },
+  {
+    "lon": -119.51659,
+    "lat": 37.73403,
+    "ele": 1877
+  },
+  {
+    "lon": -119.51635,
+    "lat": 37.73405,
+    "ele": 1878
+  },
+  {
+    "lon": -119.51623,
+    "lat": 37.73413,
+    "ele": 1879
+  },
+  {
+    "lon": -119.51605,
+    "lat": 37.73422,
+    "ele": 1881
+  },
+  {
+    "lon": -119.51513,
+    "lat": 37.73447,
+    "ele": 1884
+  },
+  {
+    "lon": -119.51499,
+    "lat": 37.73453,
+    "ele": 1884
+  },
+  {
+    "lon": -119.51457,
+    "lat": 37.73494,
+    "ele": 1887
+  },
+  {
+    "lon": -119.51413,
+    "lat": 37.73531,
+    "ele": 1898
+  },
+  {
+    "lon": -119.51412,
+    "lat": 37.73543,
+    "ele": 1901
+  },
+  {
+    "lon": -119.5145,
+    "lat": 37.73536,
+    "ele": 1900
+  },
+  {
+    "lon": -119.51455,
+    "lat": 37.73541,
+    "ele": 1903
+  },
+  {
+    "lon": -119.51441,
+    "lat": 37.73565,
+    "ele": 1910
+  },
+  {
+    "lon": -119.5144,
+    "lat": 37.73579,
+    "ele": 1913
+  },
+  {
+    "lon": -119.51483,
+    "lat": 37.73576,
+    "ele": 1922
+  },
+  {
+    "lon": -119.51486,
+    "lat": 37.73582,
+    "ele": 1925
+  },
+  {
+    "lon": -119.51467,
+    "lat": 37.73618,
+    "ele": 1930
+  },
+  {
+    "lon": -119.51481,
+    "lat": 37.73619,
+    "ele": 1934
+  },
+  {
+    "lon": -119.51496,
+    "lat": 37.73622,
+    "ele": 1939
+  },
+  {
+    "lon": -119.51487,
+    "lat": 37.7365,
+    "ele": 1940
+  },
+  {
+    "lon": -119.51494,
+    "lat": 37.73671,
+    "ele": 1944
+  },
+  {
+    "lon": -119.51496,
+    "lat": 37.73698,
+    "ele": 1952
+  },
+  {
+    "lon": -119.51494,
+    "lat": 37.73719,
+    "ele": 1958
+  },
+  {
+    "lon": -119.51493,
+    "lat": 37.73749,
+    "ele": 1962
+  },
+  {
+    "lon": -119.51465,
+    "lat": 37.73771,
+    "ele": 1966
+  },
+  {
+    "lon": -119.51444,
+    "lat": 37.73795,
+    "ele": 1971
+  },
+  {
+    "lon": -119.51438,
+    "lat": 37.7381,
+    "ele": 1974
+  },
+  {
+    "lon": -119.51451,
+    "lat": 37.73835,
+    "ele": 1980
+  },
+  {
+    "lon": -119.51487,
+    "lat": 37.7387,
+    "ele": 1983
+  },
+  {
+    "lon": -119.51512,
+    "lat": 37.739,
+    "ele": 1984
+  },
+  {
+    "lon": -119.51514,
+    "lat": 37.73933,
+    "ele": 1986
+  },
+  {
+    "lon": -119.51517,
+    "lat": 37.7397,
+    "ele": 1993
+  },
+  {
+    "lon": -119.51532,
+    "lat": 37.73977,
+    "ele": 1994
+  },
+  {
+    "lon": -119.51544,
+    "lat": 37.73987,
+    "ele": 1995
+  },
+  {
+    "lon": -119.51543,
+    "lat": 37.74002,
+    "ele": 1996
+  },
+  {
+    "lon": -119.51522,
+    "lat": 37.74024,
+    "ele": 1997
+  },
+  {
+    "lon": -119.51487,
+    "lat": 37.74037,
+    "ele": 1999
+  },
+  {
+    "lon": -119.51482,
+    "lat": 37.74057,
+    "ele": 2001
+  },
+  {
+    "lon": -119.51446,
+    "lat": 37.74083,
+    "ele": 2004
+  },
+  {
+    "lon": -119.51408,
+    "lat": 37.74085,
+    "ele": 2005
+  },
+  {
+    "lon": -119.51377,
+    "lat": 37.74078,
+    "ele": 2006
+  },
+  {
+    "lon": -119.51323,
+    "lat": 37.74072,
+    "ele": 2007
+  },
+  {
+    "lon": -119.51297,
+    "lat": 37.74057,
+    "ele": 2008
+  },
+  {
+    "lon": -119.5127,
+    "lat": 37.7406,
+    "ele": 2012
+  },
+  {
+    "lon": -119.51233,
+    "lat": 37.74071,
+    "ele": 2014
+  },
+  {
+    "lon": -119.51219,
+    "lat": 37.74079,
+    "ele": 2017
+  },
+  {
+    "lon": -119.51246,
+    "lat": 37.74096,
+    "ele": 2025
+  },
+  {
+    "lon": -119.51243,
+    "lat": 37.74106,
+    "ele": 2029
+  },
+  {
+    "lon": -119.51206,
+    "lat": 37.7411,
+    "ele": 2031
+  },
+  {
+    "lon": -119.51189,
+    "lat": 37.74123,
+    "ele": 2036
+  },
+  {
+    "lon": -119.51154,
+    "lat": 37.74127,
+    "ele": 2040
+  },
+  {
+    "lon": -119.51118,
+    "lat": 37.74143,
+    "ele": 2044
+  },
+  {
+    "lon": -119.5112,
+    "lat": 37.74154,
+    "ele": 2047
+  },
+  {
+    "lon": -119.51158,
+    "lat": 37.74178,
+    "ele": 2051
+  },
+  {
+    "lon": -119.51181,
+    "lat": 37.74195,
+    "ele": 2055
+  },
+  {
+    "lon": -119.51212,
+    "lat": 37.74208,
+    "ele": 2061
+  },
+  {
+    "lon": -119.51225,
+    "lat": 37.74215,
+    "ele": 2064
+  },
+  {
+    "lon": -119.51249,
+    "lat": 37.74219,
+    "ele": 2066
+  },
+  {
+    "lon": -119.51262,
+    "lat": 37.74232,
+    "ele": 2069
+  },
+  {
+    "lon": -119.51274,
+    "lat": 37.74238,
+    "ele": 2070
+  },
+  {
+    "lon": -119.51263,
+    "lat": 37.74261,
+    "ele": 2081
+  },
+  {
+    "lon": -119.51241,
+    "lat": 37.74261,
+    "ele": 2080
+  },
+  {
+    "lon": -119.51212,
+    "lat": 37.74256,
+    "ele": 2076
+  },
+  {
+    "lon": -119.51185,
+    "lat": 37.74254,
+    "ele": 2075
+  },
+  {
+    "lon": -119.51178,
+    "lat": 37.7426,
+    "ele": 2078
+  },
+  {
+    "lon": -119.51194,
+    "lat": 37.74277,
+    "ele": 2082
+  },
+  {
+    "lon": -119.51212,
+    "lat": 37.74291,
+    "ele": 2091
+  },
+  {
+    "lon": -119.51216,
+    "lat": 37.7431,
+    "ele": 2101
+  },
+  {
+    "lon": -119.5125,
+    "lat": 37.74327,
+    "ele": 2107
+  },
+  {
+    "lon": -119.51284,
+    "lat": 37.74338,
+    "ele": 2110
+  },
+  {
+    "lon": -119.51293,
+    "lat": 37.74349,
+    "ele": 2114
+  },
+  {
+    "lon": -119.51286,
+    "lat": 37.74354,
+    "ele": 2117
+  },
+  {
+    "lon": -119.51282,
+    "lat": 37.74362,
+    "ele": 2121
+  },
+  {
+    "lon": -119.51226,
+    "lat": 37.74369,
+    "ele": 2119
+  },
+  {
+    "lon": -119.51207,
+    "lat": 37.74375,
+    "ele": 2119
+  },
+  {
+    "lon": -119.51234,
+    "lat": 37.744,
+    "ele": 2131
+  },
+  {
+    "lon": -119.51226,
+    "lat": 37.74414,
+    "ele": 2136
+  },
+  {
+    "lon": -119.51241,
+    "lat": 37.74423,
+    "ele": 2138
+  },
+  {
+    "lon": -119.51262,
+    "lat": 37.74439,
+    "ele": 2139
+  },
+  {
+    "lon": -119.51281,
+    "lat": 37.74462,
+    "ele": 2141
+  },
+  {
+    "lon": -119.51284,
+    "lat": 37.7449,
+    "ele": 2146
+  },
+  {
+    "lon": -119.51279,
+    "lat": 37.745,
+    "ele": 2148
+  },
+  {
+    "lon": -119.51272,
+    "lat": 37.74506,
+    "ele": 2150
+  },
+  {
+    "lon": -119.51282,
+    "lat": 37.74521,
+    "ele": 2152
+  },
+  {
+    "lon": -119.51288,
+    "lat": 37.74537,
+    "ele": 2153
+  },
+  {
+    "lon": -119.51304,
+    "lat": 37.7456,
+    "ele": 2155
+  },
+  {
+    "lon": -119.51316,
+    "lat": 37.74568,
+    "ele": 2156
+  },
+  {
+    "lon": -119.51313,
+    "lat": 37.74579,
+    "ele": 2159
+  },
+  {
+    "lon": -119.51337,
+    "lat": 37.7461,
+    "ele": 2164
+  },
+  {
+    "lon": -119.5133,
+    "lat": 37.74619,
+    "ele": 2166
+  },
+  {
+    "lon": -119.51316,
+    "lat": 37.74623,
+    "ele": 2168
+  },
+  {
+    "lon": -119.51325,
+    "lat": 37.74639,
+    "ele": 2170
+  },
+  {
+    "lon": -119.5136,
+    "lat": 37.74654,
+    "ele": 2170
+  },
+  {
+    "lon": -119.51369,
+    "lat": 37.74673,
+    "ele": 2174
+  },
+  {
+    "lon": -119.51375,
+    "lat": 37.74682,
+    "ele": 2177
+  },
+  {
+    "lon": -119.51379,
+    "lat": 37.74706,
+    "ele": 2185
+  },
+  {
+    "lon": -119.51365,
+    "lat": 37.74715,
+    "ele": 2189
+  },
+  {
+    "lon": -119.51377,
+    "lat": 37.74743,
+    "ele": 2195
+  },
+  {
+    "lon": -119.51397,
+    "lat": 37.74769,
+    "ele": 2201
+  },
+  {
+    "lon": -119.51395,
+    "lat": 37.74782,
+    "ele": 2205
+  },
+  {
+    "lon": -119.51401,
+    "lat": 37.74803,
+    "ele": 2213
+  },
+  {
+    "lon": -119.51412,
+    "lat": 37.74809,
+    "ele": 2215
+  },
+  {
+    "lon": -119.5143,
+    "lat": 37.74809,
+    "ele": 2218
+  },
+  {
+    "lon": -119.5145,
+    "lat": 37.74806,
+    "ele": 2221
+  },
+  {
+    "lon": -119.51482,
+    "lat": 37.74803,
+    "ele": 2223
+  },
+  {
+    "lon": -119.51503,
+    "lat": 37.74814,
+    "ele": 2228
+  },
+  {
+    "lon": -119.51498,
+    "lat": 37.7483,
+    "ele": 2229
+  },
+  {
+    "lon": -119.51471,
+    "lat": 37.74848,
+    "ele": 2232
+  },
+  {
+    "lon": -119.51449,
+    "lat": 37.74873,
+    "ele": 2236
+  },
+  {
+    "lon": -119.51453,
+    "lat": 37.74881,
+    "ele": 2237
+  },
+  {
+    "lon": -119.51469,
+    "lat": 37.7489,
+    "ele": 2238
+  },
+  {
+    "lon": -119.51496,
+    "lat": 37.74899,
+    "ele": 2244
+  },
+  {
+    "lon": -119.5152,
+    "lat": 37.74902,
+    "ele": 2250
+  },
+  {
+    "lon": -119.51574,
+    "lat": 37.74921,
+    "ele": 2261
+  },
+  {
+    "lon": -119.51608,
+    "lat": 37.74942,
+    "ele": 2271
+  },
+  {
+    "lon": -119.51605,
+    "lat": 37.74969,
+    "ele": 2279
+  },
+  {
+    "lon": -119.51582,
+    "lat": 37.75016,
+    "ele": 2281
+  },
+  {
+    "lon": -119.51579,
+    "lat": 37.75028,
+    "ele": 2281
+  },
+  {
+    "lon": -119.51581,
+    "lat": 37.75046,
+    "ele": 2280
+  },
+  {
+    "lon": -119.51577,
+    "lat": 37.75066,
+    "ele": 2280
+  },
+  {
+    "lon": -119.5158,
+    "lat": 37.75083,
+    "ele": 2280
+  },
+  {
+    "lon": -119.51604,
+    "lat": 37.75113,
+    "ele": 2289
+  },
+  {
+    "lon": -119.51617,
+    "lat": 37.75125,
+    "ele": 2293
+  },
+  {
+    "lon": -119.51629,
+    "lat": 37.7514,
+    "ele": 2296
+  },
+  {
+    "lon": -119.51644,
+    "lat": 37.7515,
+    "ele": 2297
+  },
+  {
+    "lon": -119.51653,
+    "lat": 37.75153,
+    "ele": 2298
+  },
+  {
+    "lon": -119.51676,
+    "lat": 37.75153,
+    "ele": 2298
+  },
+  {
+    "lon": -119.51686,
+    "lat": 37.75154,
+    "ele": 2298
+  },
+  {
+    "lon": -119.51729,
+    "lat": 37.75159,
+    "ele": 2300
+  },
+  {
+    "lon": -119.51777,
+    "lat": 37.75171,
+    "ele": 2309
+  },
+  {
+    "lon": -119.51795,
+    "lat": 37.75188,
+    "ele": 2312
+  },
+  {
+    "lon": -119.51848,
+    "lat": 37.75219,
+    "ele": 2310
+  },
+  {
+    "lon": -119.51882,
+    "lat": 37.75221,
+    "ele": 2313
+  },
+  {
+    "lon": -119.51904,
+    "lat": 37.75225,
+    "ele": 2317
+  },
+  {
+    "lon": -119.51924,
+    "lat": 37.7522,
+    "ele": 2323
+  },
+  {
+    "lon": -119.51952,
+    "lat": 37.75226,
+    "ele": 2328
+  },
+  {
+    "lon": -119.51983,
+    "lat": 37.75226,
+    "ele": 2330
+  },
+  {
+    "lon": -119.52082,
+    "lat": 37.75214,
+    "ele": 2341
+  },
+  {
+    "lon": -119.52117,
+    "lat": 37.75209,
+    "ele": 2345
+  },
+  {
+    "lon": -119.52147,
+    "lat": 37.75202,
+    "ele": 2349
+  },
+  {
+    "lon": -119.52167,
+    "lat": 37.75196,
+    "ele": 2353
+  },
+  {
+    "lon": -119.52182,
+    "lat": 37.75175,
+    "ele": 2362
+  },
+  {
+    "lon": -119.52187,
+    "lat": 37.75157,
+    "ele": 2367
+  },
+  {
+    "lon": -119.52168,
+    "lat": 37.75149,
+    "ele": 2370
+  },
+  {
+    "lon": -119.52156,
+    "lat": 37.75144,
+    "ele": 2370
+  },
+  {
+    "lon": -119.52163,
+    "lat": 37.75135,
+    "ele": 2371
+  },
+  {
+    "lon": -119.52178,
+    "lat": 37.75119,
+    "ele": 2373
+  },
+  {
+    "lon": -119.52179,
+    "lat": 37.75113,
+    "ele": 2373
+  },
+  {
+    "lon": -119.52174,
+    "lat": 37.75111,
+    "ele": 2374
+  },
+  {
+    "lon": -119.52132,
+    "lat": 37.75113,
+    "ele": 2375
+  },
+  {
+    "lon": -119.52125,
+    "lat": 37.75105,
+    "ele": 2374
+  },
+  {
+    "lon": -119.5213,
+    "lat": 37.75093,
+    "ele": 2375
+  },
+  {
+    "lon": -119.52146,
+    "lat": 37.75066,
+    "ele": 2375
+  },
+  {
+    "lon": -119.52161,
+    "lat": 37.75059,
+    "ele": 2378
+  },
+  {
+    "lon": -119.52178,
+    "lat": 37.75059,
+    "ele": 2381
+  },
+  {
+    "lon": -119.52187,
+    "lat": 37.75056,
+    "ele": 2383
+  },
+  {
+    "lon": -119.52206,
+    "lat": 37.75041,
+    "ele": 2387
+  },
+  {
+    "lon": -119.52244,
+    "lat": 37.75025,
+    "ele": 2397
+  },
+  {
+    "lon": -119.52264,
+    "lat": 37.75011,
+    "ele": 2398
+  },
+  {
+    "lon": -119.52275,
+    "lat": 37.75013,
+    "ele": 2398
+  },
+  {
+    "lon": -119.52286,
+    "lat": 37.75015,
+    "ele": 2398
+  },
+  {
+    "lon": -119.523,
+    "lat": 37.75014,
+    "ele": 2398
+  },
+  {
+    "lon": -119.52312,
+    "lat": 37.75004,
+    "ele": 2397
+  },
+  {
+    "lon": -119.52317,
+    "lat": 37.74998,
+    "ele": 2397
+  },
+  {
+    "lon": -119.52327,
+    "lat": 37.74999,
+    "ele": 2397
+  },
+  {
+    "lon": -119.52345,
+    "lat": 37.75005,
+    "ele": 2397
+  },
+  {
+    "lon": -119.52367,
+    "lat": 37.75005,
+    "ele": 2396
+  },
+  {
+    "lon": -119.52387,
+    "lat": 37.75001,
+    "ele": 2399
+  },
+  {
+    "lon": -119.52396,
+    "lat": 37.74985,
+    "ele": 2399
+  },
+  {
+    "lon": -119.52407,
+    "lat": 37.74972,
+    "ele": 2398
+  },
+  {
+    "lon": -119.52422,
+    "lat": 37.74957,
+    "ele": 2397
+  },
+  {
+    "lon": -119.52431,
+    "lat": 37.74953,
+    "ele": 2397
+  },
+  {
+    "lon": -119.52442,
+    "lat": 37.74951,
+    "ele": 2397
+  },
+  {
+    "lon": -119.52465,
+    "lat": 37.74951,
+    "ele": 2397
+  },
+  {
+    "lon": -119.52481,
+    "lat": 37.74959,
+    "ele": 2398
+  },
+  {
+    "lon": -119.52491,
+    "lat": 37.74958,
+    "ele": 2398
+  },
+  {
+    "lon": -119.52517,
+    "lat": 37.74967,
+    "ele": 2401
+  },
+  {
+    "lon": -119.52551,
+    "lat": 37.74966,
+    "ele": 2405
+  },
+  {
+    "lon": -119.52587,
+    "lat": 37.7496,
+    "ele": 2408
+  },
+  {
+    "lon": -119.52604,
+    "lat": 37.74957,
+    "ele": 2408
+  },
+  {
+    "lon": -119.52613,
+    "lat": 37.74954,
+    "ele": 2409
+  },
+  {
+    "lon": -119.52619,
+    "lat": 37.74949,
+    "ele": 2409
+  },
+  {
+    "lon": -119.52629,
+    "lat": 37.74943,
+    "ele": 2409
+  },
+  {
+    "lon": -119.52637,
+    "lat": 37.74936,
+    "ele": 2409
+  },
+  {
+    "lon": -119.52646,
+    "lat": 37.74929,
+    "ele": 2409
+  },
+  {
+    "lon": -119.52664,
+    "lat": 37.74913,
+    "ele": 2411
+  },
+  {
+    "lon": -119.52675,
+    "lat": 37.74896,
+    "ele": 2413
+  },
+  {
+    "lon": -119.52689,
+    "lat": 37.74891,
+    "ele": 2415
+  },
+  {
+    "lon": -119.52708,
+    "lat": 37.74887,
+    "ele": 2417
+  },
+  {
+    "lon": -119.52718,
+    "lat": 37.7488,
+    "ele": 2421
+  },
+  {
+    "lon": -119.52711,
+    "lat": 37.74844,
+    "ele": 2425
+  },
+  {
+    "lon": -119.52724,
+    "lat": 37.7485,
+    "ele": 2428
+  },
+  {
+    "lon": -119.52721,
+    "lat": 37.74827,
+    "ele": 2427
+  },
+  {
+    "lon": -119.52734,
+    "lat": 37.74837,
+    "ele": 2430
+  },
+  {
+    "lon": -119.52733,
+    "lat": 37.74807,
+    "ele": 2424
+  },
+  {
+    "lon": -119.52747,
+    "lat": 37.74824,
+    "ele": 2430
+  },
+  {
+    "lon": -119.52751,
+    "lat": 37.74814,
+    "ele": 2429
+  },
+  {
+    "lon": -119.52757,
+    "lat": 37.74822,
+    "ele": 2429
+  },
+  {
+    "lon": -119.52762,
+    "lat": 37.74811,
+    "ele": 2427
+  },
+  {
+    "lon": -119.52773,
+    "lat": 37.74818,
+    "ele": 2426
+  },
+  {
+    "lon": -119.52771,
+    "lat": 37.74802,
+    "ele": 2421
+  },
+  {
+    "lon": -119.5279,
+    "lat": 37.74812,
+    "ele": 2428
+  },
+  {
+    "lon": -119.52794,
+    "lat": 37.74805,
+    "ele": 2429
+  },
+  {
+    "lon": -119.52794,
+    "lat": 37.74797,
+    "ele": 2425
+  },
+  {
+    "lon": -119.52809,
+    "lat": 37.74802,
+    "ele": 2433
+  },
+  {
+    "lon": -119.52821,
+    "lat": 37.748,
+    "ele": 2437
+  },
+  {
+    "lon": -119.52826,
+    "lat": 37.74791,
+    "ele": 2438
+  },
+  {
+    "lon": -119.52833,
+    "lat": 37.74792,
+    "ele": 2440
+  },
+  {
+    "lon": -119.52834,
+    "lat": 37.74785,
+    "ele": 2440
+  },
+  {
+    "lon": -119.52848,
+    "lat": 37.74784,
+    "ele": 2441
+  },
+  {
+    "lon": -119.52873,
+    "lat": 37.74762,
+    "ele": 2441
+  },
+  {
+    "lon": -119.52884,
+    "lat": 37.74756,
+    "ele": 2440
+  },
+  {
+    "lon": -119.52899,
+    "lat": 37.74755,
+    "ele": 2449
+  },
+  {
+    "lon": -119.52908,
+    "lat": 37.74745,
+    "ele": 2457
+  },
+  {
+    "lon": -119.52921,
+    "lat": 37.74742,
+    "ele": 2466
+  },
+  {
+    "lon": -119.52932,
+    "lat": 37.7474,
+    "ele": 2471
+  },
+  {
+    "lon": -119.52938,
+    "lat": 37.74725,
+    "ele": 2475
+  },
+  {
+    "lon": -119.52954,
+    "lat": 37.74692,
+    "ele": 2477
+  },
+  {
+    "lon": -119.52991,
+    "lat": 37.74676,
+    "ele": 2481
+  },
+  {
+    "lon": -119.53007,
+    "lat": 37.7467,
+    "ele": 2484
+  },
+  {
+    "lon": -119.53089,
+    "lat": 37.74632,
+    "ele": 2502
+  },
+  {
+    "lon": -119.53139,
+    "lat": 37.74612,
+    "ele": 2472
+  },
+  {
+    "lon": -119.53182,
+    "lat": 37.74596,
+    "ele": 2477
+  },
+  {
+    "lon": -119.5325,
+    "lat": 37.74571,
+    "ele": 2510
+  }
+];
+// const encodedPolyline = 'qbieFxwwxUPa@@O@MBK@O@M@K?M?K?IAKAOAKAKAKAI?M?O?M?K?OBIDQBKBKBKDMBMDM@O@MBK@K@OBMBGXk@FMFKDKDKDGDKFKJUFIDIDIFKFIDIFKDIDIDIDIFIDKDGDIDKDIFKDKHKDIDIDIDIDIDIFIFIFGFIFKDIFKDIFIFIBETw@BIFGBKDIBKBMBMBK@KDM@MBMBK@O@Q@M@M@M?K?O?M?OCMAOCMGMAMCQAKCOCMAM?ICu@?M?KCKCIEIGI?KFGHCJBL@JBJDHBJDHDNHHDHDNHPHVJH@L@LBJDH@HBJ@H@H?F?HA??j@EHEFEFEFEFEFIHEJEJCFCJCJCHAHAHAHAFAH?HAHAH?LALAJAJ?L?H?H?H@J@J?H?H?H?J@LBJDLDRJPFLDDBr@HJBHBLBLDLDH@JBLBJBH@J?J?H@H?H?L@H?HBHBH@JDJ@H@J@J?J?HCJIHIDIFGBIDMDO?K?M?O@M?M?M@KDKBKDIFKBKDKDO@KDO@O@O?ODI@KBQBO?O?O?M?Q@M@OBM?EXa@?M?Q?M?OEOCOEMAKCKCKEIGQEMEKCICKEQAKAK?O?S?K?M@KBMBMBMBMBKDM@M@M@K?M@S@M?[@S?O?K?IQy@?O?MAKAM?K?KAM?K?M@KBKDIFGHGJEJEHCHGFEFGDKDI@K?MIKEIKKEKEIGKEMCOAM?M?M?O@K@MBK@GDu@?MAMEKEMCKCQEMAMCMCOAMEMAKCK?MAK?O?K?CJ?@m@E_A?{@Is@Be@JuACy@_@uAUe@UYWUEk@MGBKNBIOMQFOGMHCI[DQ@KLS?[TGIUASJWFy@Ba@Gg@Aq@DOA{@_@YU???UTMVSVGNIBGC?WJa@Mk@`@mC\w@TU\QTANFH\F@Vc@HY@GHo@?_@F[AABC?AICGGEGAM?M@M@KEKGIGE??W[CKCK?K?O?M?M@K?M?KAKCKEIEKEGKIIEGGGGGIGIGKGIEIGIKEKGGGGKAM??[QGEGGIGEGGEEIGGEGCICM?O?KFIJCHCHAJCH?LAJEHAJAJCHCJCLCJCFCHCHEJEDI@?NIHEHGFEBK@M?MEKCKGIEGGEGIAK?K@MCKCIEIAO?M?KBKHCJAHAHEBICIEIGGEIEKAMDMHCFEHCJCH?H???XGHEFIBKBKGIGEMKEGCM?K?O?KCKGGMEICIC??WEM?ICIECI?MFKFAHCHCDI?M?K@KFGFI?KCKBKHEHAB?NGFEEIGCICHEFCHGBIIEKCKCBKHEFEEIIEEGFCEKGIBKJCHEEKKAGEFGHCGGKABKHGDIGIIEIEEEDEFI@?DQ?MGIEGAMFKFGDGHKDK@I?M?MCMAM?M?K@K@O@K??F]@M@K?M@M?MCMCIK?GHEFGDKE@MFIDGFKDGFKDI@MICG?IDIFIFGDI?IG?K@ODKFGFGDEHEDG?KIEGAICICGICGGEIEGGGIGKCCUMI?KCICGGEIGGIGIEGGGGGGCIAKDEH?H?J?HACKIEICIGGCICGEICKAG@I?E?W?K?GCGCGGGEIEKMGGEGIEEGCMAKCKCIIECCYQGGGGEKGIEIGGEGIEKGGCGGEIEIEKCKGGEEIEEGIIGGCEe@g@EKGIGGEICICKCMCOEQEMGIIKIKGKGKEGISI[AM?K@KBKBMBI@KBK@M?K?K?G?k@?O?M?K?QEKCKCKEMEKEKI[CKEWEQCMEQAKAMEM?KCKCKEKEIEKEGEIEIGKCICKCIEMEOEOCIEIEKEIGIEIGEKOKMEGCEMk@COEKEKCMEIGGGGGGEIIKCMEKCKEIEIIGIKGGMOEIGMEKEKGIGIIGIKEIGIEIIOEIGGEIGGGG??YQKCGEIAICGCGCIGGEIKGMGKCMEMEIGUEIEOAQAQ?SAO?O@O?M?MAMAKCMCMCKCOCICIEMAICKCIGOGOCIEOEMAICMCMAKCIGu@AMCIEIEIEKGMCICMEICMAKCICKAMEICOCIESAMAIAKCOAKCMGMIIEGIIGGEGA?i@SIGEIEGGKIIEGEIGIEGGGGEEJ@J?L?JBJ@LBH?L@NI?EIEIEICGGG?AQAIDEJCL?J?J?L?LGFIAIEGGEGIIKCM?CJEJ?LCJEFI?IAKAICI?C?WIGNEHICGGGEUDI@IHI@I@K?IAGEICKAIAICEGGICIGKIGIIIEEE_@_@M?I?K@IBIDGDIBGDGHGFIDMFGDGHGHEFGHIHIHGHIFIBI@I???a@EI?M@K?I?M?K@IDEFEHAJ?LALCJI?IEKCICEIEKIIIAIEIGEGAK?M?KGKEIKEKGKGICGGEEEOEKCKCKCKAMAO?K?K?K?M@OBM@K?M@OBM??@u@DIDIDIFKBMBK@O@M?K?KCKEMEOCMCKCKGGGAIFCJEFELCLEHGIAKAO?K?M?KCKEIIAIAKEGIAKAK?M?K?KCKEOEKEMEKEIGGI?K?KDEFELGLCLENEJGJGHGFEHEHCJAJ?J?LAJGHEJ?JAL?LCJGHI?C?W^AJGE@MICI@CMAK?K?KAKAM?K@KBM@KBMBO?K@K?KICGFEFKJMHGFIDEFIFI@I@I@IFEHEHCJAJCJGFEHAJ?J?LCBQh@G@I@ICAKEKCK?KAO?K?K?K?MAOAKAKCMCKGIIBEHGJEJCJELEJEGEII@KFIBIFEJGJCDc@b@OBIBIBI@GDI@K?IAIEICIAI?I@GDKDEFGDGFK?K?G@GFEJEJI@I?IAG?GJEHEJC@UPCK?KEIIAI?I?K@GJEHCL?LEHGFKHIDEHGFK@I?K?G@I?ICIKIEK?IFIDKDIDA@u@b@K?UFI@I?CJKJKJCJ?JBL@JBL?J?P?L?N?PALEHIFI?I?IEEGGIGGIIGKGIGKKIIIKEGEM?K?EHEPEJ?NCPCLCLCPAJALCNELELAJEPEJA@UfAGBKBK?MAMEKGIEKCMCQEOCKCG?KAIAI?MAI?I?K?I?I?G?I?I?I@K@GDKD[JQPGHGFCD_@p@ANAPCNAJALALCPANCJAL?LCRALALCNCJCJEHEJGJIJEHCJEJEHEHIHEFGHEHCHEHEJAJAL?JBL?JALCJCJAJ?N?L?J?J?L?J?L?N@L@N@J@L@J@J@N@J?J??V|A?J?NBN?L@J@N?J@J@J@J@JBJBJDLDJDFFHHFJ@L?J?FIBKBKFEHCH?JBFDFHDHFFBM@OBK@K?K@O@KHAFCJCJ?HBHJJLJJFFFD@B`@x@?R?NBJDNBJDJFJDLFLDLDFBL?L?LAJ?J?N@JHLFHDJ?J?LCNCLAL?J@NFLBJFHFHDJDHDHFLFHDHDH@LBL?N@L@J@F?z@?L?P?PAJAJAJ?J?J?J?N@JBL@J@J@JDXHJHFFDH@J@FFFFBJBJDJDFHBHFHDFHBNBLBJ@JBBTRF@H@H?H?H?H?H?H?F?CHEHH@H?L?J@GFGBGH?JHBDHCJBJFBFF?J?JBJH@@HJRFP?J@L@H@JBJDJBHFHDHDHFFFHFFBHDHDJBLFJHJFDFDHJFDDFHDHFFDFFJBFDFDHHDJBJBLDJDJDHDJDJDHBJ??Jb@BJBJBLBHBJBLFJDHDLBH??Jd@?L?JBNBLDNBLDJDJDHBJDHDJBJDJDNDHDJ@LBJ@JBDNb@?JBJ@H?N?JEJGFI@M?GAKAK?IAKAG?p@D@PBJ?JAHEJEHEHCDL[HCHEJCFEJ?J?F?L@HBL@H@H@J@JDF@HBHBF@JBDB`@TH?HBHDHDHFHHFDFFFFDFFFBHFH?J?J?JCJAF@GBK?K?K?KGICIGGEGGGGGGEIIIGIEIEICI?a@UECKCGAICICGAKEKAIAIAMAICMAG?K?K?GDKBIDIBMZBEDIDIDK@I?KCKAQq@EF?J@H@J?J@F@L?HAFGDK?K?OAICK?KOc@CEAKCKAMEKEIEOEKCKEKEICKEIEKEKCMEOCMCO?K?MKe@??CIEMEIGKCMCKCICMCKCKKc@??CKEIEKEKEIEKEKCMCKEKIIGEGEKCGGGEIGIEEGGEIKGEGEIKGKCMEKEICIGGGIGGEIEIGICIEKCKAKAIAM?KGQKSAIIACK?K?KGGGCCKBKEIIC?KFIFCFGKAM?I?IADIBIG?I?I?I?I?I?I?IAGAUSCCAKCKCMCOGIIEIGICEGEKCKCKGGGGKAIAGEIGIKEYAKAKAKCMAK?O?K?K?K@K@K@K?Q?Q?M?{@AGAKAM?OCMAMEIEIGIGMEIEIEKGIGICKGMAO?K@MBMBO?M?KEKGIIMAK?O?K@K?M?MCMEGEMGMEMGKEKCKEOCK?O?Sa@y@ACGEGGKKKMIKICK?KBGBI@AJAN?JAJCJANCLGGEIGIGEKCI?IBGDCJCJGHK?M?KAIGGIEGEKEMCKCKAKAKAKAK?KAOAK?MCO?O?KW}A???KAKAOAKAKAMAKAOAM?O?M?K?M?K?K?M?O@KBKBK@M?KCM?K@M@KDKDIBIDIFIDGHIDIDIDKBKDIHKFKDKDIBKBKBO@M@MBS?M@MBK@OBQ@M@M@KBO@Q@O^q@BEFGFIPQZKJEFEJAHAH?H?F?H?H?J?H?H?L@H?H@J@F?JBNBPDLBJBHDJFLDL@J?JCFCTgA@ADKDQ@KDMDMBO@M@KBQBMBMBQ?ODKDQDIJ?L?FDJDHHJHFJFHFJHHFFFHDFHDH?H?HGDI@M?Q?O?M?Q?KCMAKCM?KBKJKJKBKH?HATGJ?t@c@@AHEJEHEHGJ?HDHJHBH?FAJ?H?JAFGDIHEJIFGDI?MBMDIFKJAH?H?H@DH?JBJTQBADKDIFKF?H@H?HADKDKFGFAJ?J?FGFEDGJEFEHAH?H@HBHDH@J?HAFEHAHCHCNCb@c@BEFKDKHGHCJGHADHDFDKDMBKDKFKDIHCFHBJBL@J@J@N?L?J?J?J@N?JBJDJ@JHBHAFAPi@BC?M?K@KDIFGBK@KBKDIDIHGHAHAHAHGDGHEFGLIJKDGFGHB?JAJ?JCNCLAJCLAJ?J@L@J?J?J@JBLHAHBALFD@KV_@B?H?FIBK?M@M?KDKFI@K?M?K@KBKDIDIFGFIFKDKDOBMFMDMDGJEJ?H?FFDHDJDLDJDNBJ?J?J?L@J@JFHJDH@H@DHBJ?J?L?J@N@JFHDIBMDMDGBKHGF@FFBJBJBLDNDLBJ?J?JALANCJCLGJEHEHEHAt@??CLAN?LAJCLAN?L?J?J?J@N@LBJBJBJDJDNDDFFHBJFJFJDDHFJ?J?L@JDFHFHDH@HHDJDHHBJBHDH?BK@M?M@KDIDGHEJAL?H?J?LAH?`@D??H?HAHCHGFIHIHIFIDGFIFIFELGHEFGFIFEHCFEHEHCJAH?L?^^DDHDHHHFFJBHFHDFHBH@J@HBFDH@J?HAHAHIHATEFDFFHBDIFOVHB?H?HBJ@H@H?DGBK?MDKBKL?JBHHDFFFHDH@FG?M?M?K?KBMDKHEP@?@FFBFDHDHDHH?AO?MCIAMCK?K?MAKDKFDFFDFFHDHDFHHFJDFDHHFh@R@?DFFFHHDFHHFLBL@JBN@J@H@LDRBHBNDH@LBJBH@JBLDHBLBHFLDJDHDHBH@LFt@BH@JBLBL@HDLDNBHFNFNBHBJ@HDLBHBHBNBJBLBL@J@L?L?LAN?N@N?R@P@PDNDHFTDHDLBLFJFLHJFDHFFBFBHBH@FDJBXP??FFFFDHFFDHHNDHFHDHHJHFFHFHDJDJFLDHLNFFHJHFDHDHBJDJBLHJDHFFFFFFDHBLDJDJBNLj@BDDFJLJNFDDHFHDHDJDHBHDNDNDLBHBJBHFJDHDHDFDJDHDJBJBJ?JDL@L@JDPBLDPDVBJHZDJDJDLBJBJDJ?P?J?L?N?j@?F?J?JALCJAJCHCLCJAJ?J@LHZHRDFFJFJHJHJFHDLDPBNBLBJBHDHFFFHDJd@f@BDFFHHDFHDDDFFBJDJDHDHFFFBJFHDDFFFDHFHDJFFFFXPBBHDBHBJ@JBLDFHDDFFFJLHDFDFFFBFBJ?V?D?H?FAJ@HBFDHBFBHFHBHDBJI@K?I?I?ED@JBHFFFFFFHDHFFFDHFFHBJBH?TLBBFJFHFF@?A@b@Zf@NDLc@JCb@MRT?PMP?V?JBPFHDFTFb@HTL\Fz@Nt@Xl@d@hBx@pARb@HND@h@HJJdAbAPF\HZHNPHLPf@Zb@n@b@X^JHd@Ln@`@BTBB??T^J\F|@BRR`ARh@^pBXt@F^EnAMfAAj@I\CZAj@Bd@Kt@Ud@I\QzAJbAHZDZDh@Cd@KFOs@S[Ou@Qg@Kk@GOCMCAA?C@AFGXE\B^VjAJb@Ff@?LMzAWnAO^EN?\GT]p@Sx@[j@Wn@UbAWh@GVQXGd@IDDq@?o@Fi@@m@AYQb@k@jAIr@IXOT[lBM?WWEGCZEd@Kd@EBGBIQQYCKE]CGG|@A`@@XBHBJJNNHBDBh@DRJXPVHHJ?DC?ADCFEFGFEDIFEHEJEJAHAJ?J?JBJ?HDHBJFJFFFAJIBK?K?I?I?G?I?I?GBFDF@J@H?J@JBHDJBJ@BJI@G?K?G?K@HDFDHDFDLDFHI?IAIAIAI?DFFDFDJDHDFDIBI?IAKCKAKCGAIBFFFFJDFDFHDFFFLH@HIDI@EFDFFDJBDT@DBJANEFEH?J@JFHDHFDDFJBBJIFIDI@DFFFFFHDFDHDDFFHBL@L@JBLDHDNDHDFLLHJHJDJJJFHFFLLDFBN?JAJGFI@GCIIGGIKGGIKGEIEIEGEIGGGIGKMEGEIg@c@??EIKKEGKIIGGGKMIGIGGIGEGEIEIAICGAK?K@DHDHFHDJDHFHFHFHFHDH@J?LCJEFICIGIKGKGIGGIEKEKCGEGEIEGIIGGKGIEICIEIICI@?L@JBHDHDJBJDHBNBLBNDPBHDLBHBLBL@J@J@JGDIEGGGGEIEKGGGIGGIKGGGKg@i@?AICGEMEGGGIGE?J@LBJ@JDJBLDJBHDHFJFJFJFHDHBJBJ?J@LCHGEGGGMEIIMMSIOGGIEGEIEGEMIGGIIIIIIGGGGIKGKEGIAEFAL?J?N@J?LBJ@JDL@LBNBL@LDLBPBJDLDJ@L?LEt@AFCJALAJ?N?L?L@LBNDLFJDHDJJJDHHJ?LAJEHEJGFGDIFIBKDKDIFGFEHCJAJ?L?J@L?J?J@L@J?L?NPx@?H?J?NAR?ZALAR?LAJALALELCJCLCLCLCLAJ?L?J?R?N@J@JDPBJBHDJDLFPDHBJBJ@JDLBNDN?N?L?P?LY`@?DCLANAL?P?L?N?NCNCPAJEH?NANANENAJENEJCJGJEHCJEJAJ?L?LAL?N?L?JENELCHGFEHIHKHIBK?K?KAIAKAKEIAICICI?MAI?I?IAK?K?IAKCMCKCIAMEMEMCICKCs@IECMEQGSKMEKEMCKAI?I?I?K?KAIAI?I?M?K?K@M@M@I?I@I@I?G@I@I@I@I@KBKBGBKBKDIDGHGDGDGDGDIDk@D??I@G?I?IAKAICIAKEMCMAIAWKQIOIIEIEOIIEKEICKEKCMAKCIBGF?JFHDHBHBJ?J?LBt@?H@LBLBN@JBP@LFLBL@NBL?N?L?N?JALALALAPANCJCLALELAJCJCLCLCJEHCJGFCHUv@CDGHGHEHGJEHGJGHGFGHGHEHEHEHEHEHEHIJEJGJEHEJEHEFEJGHEHEHEHEHGJEHGHGJEHEHGHKTGJEJEFEJEJGJGLYj@CFCLANAJCJALANELCLELCJCJCJEPCH?N?J?L?N?L@H@J@J@J@N@J?H?J?LAJALANCJALANQ`@';
+// const encodedPolyline = ''
+// const wholeGeometry = polyline.toGeoJSON(encodedPolyline);
 const data = {
     type: 'LineString',
     coordinates: []
@@ -41,7 +1214,7 @@ const map = window.map = new mapboxgl.Map({
 async function animate() {
     // do all the animations you need to record here
     map.easeTo({
-        bearing: map.getBearing() + 180,
+        bearing: map.getBearing() - 100,
         center: [-119.5339927, 37.74725],
         duration: 8000,
         easing: t => t
@@ -49,6 +1222,20 @@ async function animate() {
     // wait for animation to finish
     await map.once('moveend');
 }
+
+const startAnimatingRoute = () => {
+    let i = 0;
+    let timer = window.setInterval(() => {
+        if (i < wholeGeometry.length) {
+            const geometry = wholeGeometry[i];
+            data.coordinates.push([geometry.lon, geometry.lat]);
+            map.getSource('route').setData(data);
+            i++;
+        } else {
+            window.clearInterval(timer);
+        }
+    }, 35);
+};
 
 map.on('load', async () => {
     map.addSource('dem', {type: 'raster-dem', url: 'mapbox://mapbox.mapbox-terrain-dem-v1'});
@@ -72,16 +1259,18 @@ map.on('load', async () => {
         }
     });
 
-    let i = 0;
-    let timer = window.setInterval(() => {
-        if (i < wholeGeometry.coordinates.length) {
-            data.coordinates.push(wholeGeometry.coordinates[i]);
-            map.getSource('route').setData(data);
-            i++;
-        } else {
-            window.clearInterval(timer);
-        }
-    }, 10);
+    setTimeout(startAnimatingRoute, 2000);
+    // let i = 0;
+    // let timer = window.setInterval(() => {
+    //     if (i < wholeGeometry.length) {
+    //         const geometry = wholeGeometry[i];
+    //         data.coordinates.push([geometry.lon, geometry.lat]);
+    //         map.getSource('route').setData(data);
+    //         i++;
+    //     } else {
+    //         window.clearInterval(timer);
+    //     }
+    // }, 35);
     // wait until the map settles
     await map.once('idle');
 
